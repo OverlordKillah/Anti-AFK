@@ -26,7 +26,7 @@ WINDOW_TIMEOUT := 10
 ;   You can customise this function freely - just make sure it resets the timer.
 TASK := () => (
     Send("{Space Down}")
-    Sleep(50)
+    Sleep(5)
     Send("{Space Up}")
 )
 
@@ -45,7 +45,7 @@ BLOCK_INPUT := False
 ; PROCESS_LIST (Array):
 ;   This is a list of processes that Anti-AFK will montior. Any windows that do
 ;   not belong to any of these processes will be ignored.
-PROCESS_LIST := ["notepad.exe", "wordpad.exe"]
+PROCESS_LIST := ["robloxplayerbeta.exe", "wordpad.exe"]
 
 ; PROCESS_OVERRIDES (Associative Array):
 ;   This allows you to specify specific values of WINDOW_TIMEOUT, TASK_INTERVAL,
@@ -53,7 +53,7 @@ PROCESS_LIST := ["notepad.exe", "wordpad.exe"]
 ;   games consider you AFK at wildly different times, or if the function to
 ;   reset the AFK timer does not work as well across different applications.
 PROCESS_OVERRIDES := Map(
-    "wordpad.exe", Map(
+    "robloxplayer.exe", Map(
         "WINDOW_TIMEOUT", 5,
         "TASK_INTERVAL", 5,
         "BLOCK_INPUT", False,
