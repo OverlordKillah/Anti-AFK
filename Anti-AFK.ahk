@@ -45,7 +45,7 @@ BLOCK_INPUT := False
 ; PROCESS_LIST (Array):
 ;   This is a list of processes that Anti-AFK will montior. Any windows that do
 ;   not belong to any of these processes will be ignored.
-PROCESS_LIST := ["notepad.exe", "wordpad.exe"]
+PROCESS_LIST := ["RobloxPlayerBeta.exe", "wordpad.exe"]
 
 ; PROCESS_OVERRIDES (Associative Array):
 ;   This allows you to specify specific values of WINDOW_TIMEOUT, TASK_INTERVAL,
